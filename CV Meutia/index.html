@@ -1,71 +1,171 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meutia Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Portfolio - Meutia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <!-- DEKORASI -->
-    <img src="img/star.jpeg" class="decor star" alt="">
-    <img src="img/butterfly.jpeg" class="decor butterfly" alt="">
+<header class="header">
+  <div class="container">
+    <h1 class="logo">Meutia Rahmadhani B.</h1>
 
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">CV Meutia</h2>
-            <ul class="nav-links">
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#experience">Pengalaman</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-            <button class="resume-btn">Resume</button>
-            <button id="darkModeToggle" class="dark-btn">🌙</button>
-        </nav>
-    </header>
+    <nav class="nav">
+      <a href="#about">About Me</a>
+      <a href="#skills">Skill</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- HERO -->
-    <section class="hero reveal">
-        <div class="hero-left">
-            <p class="intro">Haii, Saya</p>
-            <h1 class="name">Meutia Rahmadhani B. ✨</h1>
-            <h3 class="role">Mahasiswi Teknik Informatika yang menyukai desain UI/UX, pemrograman,
-                dan teknologi kreatif. </h3>
+<section class="hero section fade-in">
+  <div class="container hero-content">
 
-            <p class="desc">
-                Saat ini saya sedang menempuh pendidikan di salah satu Universitas yang ada di Malang, dan Saya menyukai mendesign hal-hal yang lucu😊
-            </p>
+    <div class="hero-text">
+      <p class="intro">Hai, saya</p>
+      <h1>Meutia Rahmadhani B. ✨</h1>
 
-            <a href="#contact" class="cta-btn">Hubungi Saya</a>
+      <p class="role">
+        Mahasiswi Informatika Semester 6 di Universitas Muhammadiyah Malang yang berfokus pada <strong>Keamanan Jaringan</strong>. Saya memiliki ketertarikan besar dalam mengeksplorasi celah keamanan sistem, mengonfigurasi infrastruktur jaringan yang andal, sekaligus merancang antarmuka pengguna (UI/UX) yang interaktif dan fungsional.
+      </p>
+
+      <a href="#contact" class="btn">Hubungi Saya</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/Meutia.jpg" alt="Foto Meutia">
+    </div>
+
+  </div>
+</section>
+
+<main>
+
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+
+      <div class="card">
+        <p>
+          Saya adalah mahasiswi Informatika Semester 6 di Universitas Muhammadiyah Malang dengan peminatan <strong>Sistem Keamanan Jaringan</strong>. Saya memiliki pengalaman praktis dalam merancang topologi jaringan aman berbasis Cisco serta tertarik pada pengembangan software dan UI/UX design. Saya senang memecahkan masalah teknis dan siap berkontribusi dalam tim.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section fade-in">
+    <div class="container">
+      <h2>Skill</h2>
+
+      <div class="skills-container">
+        <div class="card skill-card">
+          <h3>Networking & Security</h3>
+          <ul class="skill-list">
+            <li>Computer Networking</li>
+            <li>Cisco CLI Configuration (Routing & Switching)</li>
+            <li>Cisco Packet Tracer Simulation</li>
+            <li>Basic Network Security & Protocols</li>
+          </ul>
         </div>
 
-        <div class="hero-right">
-            <img src="images/meutia.jpg" alt="Foto Saya" class="profile-pic">
+        <div class="card skill-card">
+          <h3>Development & Databases</h3>
+          <ul class="skill-list">
+            <li>Java Programming</li>
+            <li>SQL (MySQL & Oracle)</li>
+            <li>HTML, CSS, JavaScript</li>
+          </ul>
         </div>
-    </section>
 
-    <!-- TENTANG -->
-    <section id="about" class="section reveal">
-        <h2>Tentang Saya</h2>
-        <p>Sedang menempuh pendidikan Teknik Informatika di Universitas Muhammadiyah Malang (2023–Sekarang).</p>
-        <p><strong>Lokasi:</strong> Malang, Indonesia</p>
+        <div class="card skill-card">
+          <h3>Design & Tools</h3>
+          <ul class="skill-list">
+            <li>UI/UX Design (Figma)</li>
+            <li>Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
 
-        <h3>Keahlian:</h3>
-        <ul class="skills">
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
+    </div>
+  </section>
 
-    <!-- KONTAK -->
-    <section id="contact" class="section reveal">
-        <h2>Kontak</h2>
-        <p>Email: <a href="mailto:meutia@example.com">meutiarahmadhani225@gmail.com</a></p>
-        <p>Instagram: @imtiaa__</p>
-    </section>
+  <section id="projects" class="section fade-in">
+    <div class="container">
+      <h2>Project</h2>
 
-    <script src="js/script.js"></script>
+      <div class="project-grid">
+
+        <div class="card">
+          <h3>Simulasi Infrastruktur Jaringan Korporat</h3>
+          <p>Perancangan topologi jaringan aman berbasis kurikulum Cisco CCNA.</p>
+          <button onclick="toggleDetail('p3')" class="btn">Detail</button>
+          <div id="p3" class="hidden project-detail">
+            <p><strong>Deskripsi:</strong> Merancang simulasi jaringan skala menengah dengan implementasi routing, switching, dan pengamanan akses lalu lintas data jaringan.</p>
+            <p><strong>Fitur/Konsep:</strong> VLAN, Subnetting, Access Control List (ACL), Inter-VLAN Routing</p>
+            <p><strong>Tools:</strong> Cisco Packet Tracer</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>UI/UX Design Aplikasi Mobile</h3>
+          <p>Perancangan antarmuka aplikasi interaktif dan user-centric.</p>
+          <button onclick="toggleDetail('p4')" class="btn">Detail</button>
+          <div id="p4" class="hidden project-detail">
+            <p><strong>Deskripsi:</strong> Membuat konsep, user flow, hingga high-fidelity prototype interaktif untuk tugas perancangan aplikasi kreatif.</p>
+            <p><strong>Tools:</strong> Figma</p>
+            <a href="https://www.figma.com/design/Ps2Ab0QJ41ZLBfDOaSRpJ6/AufaGo?node-id=0-1" target="_blank" class="btn-link">Lihat Prototype Figma ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Sistem Inventaris Buku</h3>
+          <p>Aplikasi Java untuk manajemen stok buku.</p>
+          <button onclick="toggleDetail('p1')" class="btn">Detail</button>
+          <div id="p1" class="hidden project-detail">
+            <p><strong>Fitur:</strong> Login, CRUD, Laporan</p>
+            <p><strong>Tech Stack:</strong> Java, MySQL</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Database Pet Care</h3>
+          <p>Desain database klinik hewan.</p>
+          <button onclick="toggleDetail('p2')" class="btn">Detail</button>
+          <div id="p2" class="hidden project-detail">
+            <p><strong>Konsep:</strong> ERD, CDM, PDM</p>
+            <p><strong>Tools:</strong> Oracle SQL Developer</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <h2>Contact</h2>
+
+      <div class="card">
+        <p>Email: <a href="mailto:meutiarahmadhani225@gmail.com">meutiarahmadhani225@gmail.com</a></p>
+        <p>WhatsApp: <a target="_blank">085655743608</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Meutia Portfolio</p>
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>

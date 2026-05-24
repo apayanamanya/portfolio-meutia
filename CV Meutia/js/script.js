@@ -1,22 +1,20 @@
-// DARK MODE🌙
-const toggle = document.getElementById("darkModeToggle");
-
-toggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-});
-
-// SCROLL REVEAL✨
-const reveals = document.querySelectorAll(".reveal");
-
-function scrollReveal() {
-    reveals.forEach((section) => {
-        const top = section.getBoundingClientRect().top;
-
-        if (top < window.innerHeight - 100) {
-            section.classList.add("active");
-        }
-    });
+// toggle detail project
+function toggleDetail(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle("hidden");
 }
 
-window.addEventListener("scroll", scrollReveal);
-scrollReveal();
+// scroll animation
+const elements = document.querySelectorAll(".fade-in");
+
+function revealOnScroll() {
+  elements.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
